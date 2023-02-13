@@ -1,0 +1,70 @@
+{% extends 'shop/basic.html' %}
+{% block title %}About Us{%endblock%}
+{% block body %}
+  <main>
+      <div class="col-md-7 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal">Welcome to the Shop of Jerry</h1>
+        <p class="lead fw-normal">We are a leading online shop offering a wide range of products to customers around the world. Our mission is to provide a convenient and seamless shopping experience, with fast and reliable shipping, competitive pricing, and exceptional customer service.<br>
+
+            We offer a diverse selection of products in categories such as electronics, home goods, fashion, beauty, and more. Our team carefully curates our product offerings to ensure that we have the latest and greatest items available to our customers.<br>
+            
+            At our online shop, we believe in putting the customer first. That's why we offer easy returns, secure payment options, and 24/7 customer support to ensure a smooth shopping experience.<br>
+            
+            Shop with us today and see why we're the go-to destination for savvy shoppers everywhere.</p>
+      </div>
+  
+  </main>
+  
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-8 col-md">
+        {% load static %}
+        <img src ="{% static "shop/logos.png" %}" class="img-fluid" style="height: 100px;">
+        <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#">Random feature</a></li>
+          <li><a class="link-secondary" href="#">Team feature</a></li>
+          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+          <li><a class="link-secondary" href="#">Another one</a></li>
+          <li><a class="link-secondary" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Resource name</a></li>
+          <li><a class="link-secondary" href="#">Resource</a></li>
+          <li><a class="link-secondary" href="#">Another resource</a></li>
+          <li><a class="link-secondary" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Business</a></li>
+          <li><a class="link-secondary" href="#">Education</a></li>
+          <li><a class="link-secondary" href="#">Government</a></li>
+          <li><a class="link-secondary" href="#">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Team</a></li>
+          <li><a class="link-secondary" href="#">Locations</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  
+      <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+        
+{%endblock%}

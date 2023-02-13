@@ -1,0 +1,33 @@
+{% extends 'shop/basic.html' %}
+{% block title %} Feedback and Queries{% endblock %}
+{% block body %}
+    <div class="container">
+        <h3>Feedback and Queries</h3>
+        <form action="/shop/feedback/" method="post">{% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="name">Phome</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
+            </div>
+            <br>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="desc">How May We Help You ?</label>
+                    <textarea class="form-control" id="desc" name="desc" rows="3" style="height: 182px;"></textarea>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success">Submit</button>   
+        </form>
+    </div>
+  
+  {%endblock%}
